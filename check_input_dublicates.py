@@ -1,3 +1,9 @@
+"""
+Reads XML config from stdin to identify duplicate <ext:column name="..."/> names.
+Outputs unique or duplicate status. Works with plain text, interactively via terminal,
+ensuring input contains appropriate XML column tags.
+"""
+
 import re
 import sys
 

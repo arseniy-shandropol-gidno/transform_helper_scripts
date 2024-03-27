@@ -1,3 +1,9 @@
+"""
+Accepts XML config via stdin, transforming <column name="..." alias="..."/> into <ext:column name="..."/>.
+Prioritizes aliases over names in output. Requires plain text input containing XML tags.
+Operates interactively in a terminal.
+"""
+
 import re
 import sys
 

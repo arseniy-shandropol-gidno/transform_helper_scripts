@@ -1,3 +1,10 @@
+"""
+Processes XML input from stdin, identifying common column names across tables,
+appending table aliases to avoid conflicts. Input: plain text XML with <table> and <ext:column> tags.
+Output: modified XML with unique column aliases for shared column names.
+Interactive terminal input required.
+"""
+
 def process_tables(tables):
     # Identify common column names
     column_names = {}

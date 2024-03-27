@@ -1,3 +1,10 @@
+"""
+Converts XML config input from stdin into a JSON representation of a field set,
+utilizing <ext:column name="..." alias="..."/> tags for field names.
+Input: plain text XML. Output: JSON structure with field set details.
+Operates interactively in a terminal, focusing on name and alias attributes for conversion.
+"""
+
 import json
 import re
 import sys
